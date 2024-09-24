@@ -1,0 +1,33 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=mydatabase'
+      - 'POSTGRES_PASSWORD=secret'
+      - 'POSTGRES_USER=myuser'
+    ports:
+      - '3000:5432'
+    expose:
+      - '3000'
+
+  minio:
+    image: docker.io/bitnami/minio:2022
+    ports:
+      - '9000:9000'
+      - '9001:9001'
+    networks:
+      - minionetwork
+    volumes:
+      - 'minio_data:/data'
+    environment:
+      - MINIO_ROOT_USER=admin
+      - MINIO_ROOT_PASSWORD=password
+      - MINIO_DEFAULT_BUCKETS=files-bucket
+
+networks:
+  minionetwork:
+    driver: bridge
+
+volumes:
+  minio_data:
+    driver: local
