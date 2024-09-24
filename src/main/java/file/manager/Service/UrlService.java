@@ -1,7 +1,7 @@
 package file.manager.Service;
 
-import cinapse.cinapse.Entities.File;
-import cinapse.cinapse.Repository.FileRepository;
+import file.manager.Entities.File;
+import file.manager.Repository.FileRepository;
 import io.minio.GetPresignedObjectUrlArgs;
 import io.minio.MinioClient;
 import io.minio.http.Method;

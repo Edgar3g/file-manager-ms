@@ -1,9 +1,9 @@
 package file.manager.Service;
 
-import cinapse.cinapse.Entities.File;
-import cinapse.cinapse.Entities.Owner;
-import cinapse.cinapse.Repository.FileRepository;
-import cinapse.cinapse.Repository.OwnerRepository;
+import file.manager.Entities.File;
+import file.manager.Entities.Owner;
+import file.manager.Repository.FileRepository;
+import file.manager.Repository.OwnerRepository;
 import io.minio.MinioClient;
 import io.minio.PutObjectArgs;
 import io.minio.RemoveObjectArgs;

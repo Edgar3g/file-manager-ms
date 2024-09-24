@@ -1,7 +1,7 @@
 package file.manager.Controller;
 
-import cinapse.cinapse.Entities.Owner;
-import cinapse.cinapse.Service.UserService;
+import file.manager.Entities.Owner;
+import file.manager.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

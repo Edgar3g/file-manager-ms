@@ -1,7 +1,7 @@
 package file.manager.Service;
 
-import cinapse.cinapse.Entities.Owner;
-import cinapse.cinapse.Repository.OwnerRepository;
+import file.manager.Entities.Owner;
+import file.manager.Repository.OwnerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

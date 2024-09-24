@@ -1,6 +1,6 @@
 package file.manager.Repository;
 
-import cinapse.cinapse.Entities.Owner;
+import file.manager.Entities.Owner;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
